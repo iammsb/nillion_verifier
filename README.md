@@ -32,7 +32,7 @@ cat ~/nillion/accuser/credentials.json
 ---
 - After 60 mins, run these 2 final commands
 ```bash
-sudo apt update && sudo apt install -y screen jq
+sudo apt update && sudo apt install -y jq
 ```
 ```bash
 current_block=$(curl -s https://testnet-nillion-rpc.lavenderfive.com/abci_info | jq -r '.result.response.last_block_height'); block_start=$((current_block - 5)); docker run -v $(pwd)/nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start $block_start
