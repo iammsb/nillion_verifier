@@ -34,4 +34,4 @@ cat ~/nillion/accuser/credentials.json
 ```bash
 current_block=$(curl -s https://testnet-nillion-rpc.lavenderfive.com/abci_info | jq -r '.result.response.last_block_height'); block_start=$((current_block - 5)); docker run -v $(pwd)/nillion/accuser:/var/tmp nillion/retailtoken-accuser:latest accuse --rpc-endpoint "http://65.109.222.111:26657" --block-start $block_start
 ```
-- Done ✅ , Follow me [ZunXBT](https://x.com/ZunXBT)
+- Done ✅ , Follow me [iamMSB]([https://x.com/MichaelSethBasi])
