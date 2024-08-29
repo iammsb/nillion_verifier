@@ -16,7 +16,7 @@ docker pull nillion/retailtoken-accuser:latest
 ```
 - Use the below command to create a directory and to initialise the accuser
 ```bash
-mkdir -p nillion/accuser && docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 initialise
+mkdir -p nillion/accuser && docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:latest initialise
 ```
 - After executing the above command, you will see `accound_id` and `public_key` in your terminal, copy the value
 - Now visit [this site](https://verifier.nillion.com/verifier), submit your `accound_id` and `public_key` in the appropriate field
