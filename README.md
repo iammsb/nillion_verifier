@@ -32,6 +32,6 @@ cat ~/nillion/accuser/credentials.json
 ---
 - After 60 mins, run this final command
 ```bash
-docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5107613
+docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:latest accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5107613
 ```
 - Done ✅ , Follow me [ZunXBT](https://x.com/ZunXBT)
