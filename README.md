@@ -30,11 +30,8 @@ cat ~/nillion/accuser/credentials.json
 <h2 align=center>NOW TAKE A BREAK FOR 60 MINS</h2>
 
 ---
-- After 60 mins, run these 2 final commands
+- After 60 mins, run this final command
 ```bash
-sudo apt update && sudo apt install -y jq
-```
-```bash
-current_block=$(curl -s https://testnet-nillion-rpc.lavenderfive.com/abci_info | jq -r '.result.response.last_block_height'); block_start=$((current_block - 5)); docker run -v $(pwd)/nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start $block_start
+docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5107613
 ```
 - Done ✅ , Follow me [ZunXBT](https://x.com/ZunXBT)
