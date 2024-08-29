@@ -12,7 +12,7 @@ sudo apt update -y && sudo apt install -y apt-transport-https ca-certificates cu
 ```
 - Use this command to pull nillion accuser image
 ```bash
-docker pull nillion/retailtoken-accuser:v1.0.0
+docker pull nillion/retailtoken-accuser:latest
 ```
 - Use the below command to create a directory and to initialise the accuser
 ```bash
